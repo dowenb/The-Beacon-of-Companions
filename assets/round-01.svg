@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="A wayfinder at a misty crossroads chooses between a warm village road and a dark rocky shortcut">
+  <defs>
+    <radialGradient id="plateVignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="#0c1320" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0c1320" stop-opacity="0.28"/>
+    </radialGradient>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe2ab"/><stop offset=".55" stop-color="#f3bfa2"/><stop offset="1" stop-color="#a9bcd0"/></linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6d8a6c"/><stop offset="1" stop-color="#3e5a49"/></linearGradient>
+    <radialGradient id="sun"><stop stop-color="#fff6d4" stop-opacity=".95"/><stop offset="1" stop-color="#fff1b8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <circle cx="618" cy="104" r="96" fill="url(#sun)"/>
+  <circle cx="618" cy="104" r="42" fill="#fff0bd"/>
+  <path d="M0 262 Q120 208 244 246 T500 230 T800 250 V450 H0Z" fill="#9db3a6" opacity=".75"/>
+  <path d="M0 296 Q160 246 300 282 T610 268 T800 292 V450 H0Z" fill="#779580" opacity=".9"/>
+  <path d="M0 322 Q200 292 400 314 T800 306 V450 H0Z" fill="url(#ground)"/>
+  <!-- crags on the lonely left path -->
+  <path d="M0 250 L70 176 L118 226 L176 152 L244 244 L214 300 L0 318Z" fill="#596363"/>
+  <path d="M70 176 L92 205 L54 208Z" fill="#d8dcd2" opacity=".7"/>
+  <path d="M176 152 L200 196 L154 194Z" fill="#d8dcd2" opacity=".7"/>
+  <!-- warm village path -->
+  <path d="M360 450 C390 372 520 344 724 302 L800 288 V350 C610 372 474 414 452 450Z" fill="#d7b878" opacity=".92"/>
+  <!-- dark shortcut -->
+  <path d="M340 450 C312 386 224 350 92 306 L0 280 V338 C150 376 246 416 268 450Z" fill="#354640" opacity=".92"/>
+  <!-- village -->
+  <g fill="#e8d6b0" stroke="#8c6a48" stroke-width="2">
+    <rect x="676" y="256" width="42" height="32"/><path d="M670 256 L697 236 L724 256Z" fill="#a6603f"/>
+    <rect x="732" y="268" width="34" height="26"/><path d="M727 268 L749 252 L771 268Z" fill="#a6603f"/>
+    <rect x="636" y="274" width="30" height="22"/><path d="M631 274 L651 260 L671 274Z" fill="#a6603f"/>
+  </g>
+  <!-- tipped cart -->
+  <g transform="translate(248 352) rotate(-14)">
+    <rect x="-26" y="-14" width="52" height="28" rx="5" fill="#a86f43" stroke="#6e4529" stroke-width="3"/>
+    <circle cx="-16" cy="18" r="9" fill="#5a4230"/><circle cx="18" cy="18" r="9" fill="#5a4230"/>
+    <path d="M26 -8 L44 -26" stroke="#6e4529" stroke-width="4"/>
+  </g>
+  <!-- wayfinder with map -->
+  <g transform="translate(410 396)">
+    <ellipse cy="3" rx="19" ry="5" fill="#000" opacity=".22"/>
+    <path d="M0-36 C12-36 17-16 20 0 L-20 0 C-17-16 -12-36 0-36Z" fill="#3f6079"/>
+    <circle cx="0" cy="-42" r="8" fill="#e2b58e"/>
+    <path d="M-9-44 Q0-56 9-44 L9-40 Q0-48 -9-40Z" fill="#2d4659"/>
+    <rect x="8" y="-24" width="13" height="10" rx="1" fill="#efdfb8" transform="rotate(-16 14 -19)"/>
+  </g>
+  <!-- merchant waving -->
+  <g transform="translate(300 374)">
+    <ellipse cy="3" rx="17" ry="5" fill="#000" opacity=".2"/>
+    <path d="M0-34 C11-34 16-15 18 0 L-18 0 C-16-15 -11-34 0-34Z" fill="#a26340"/>
+    <circle cx="0" cy="-40" r="7.5" fill="#d9a67c"/>
+    <path d="M-8-42 Q0-53 8-42 L8-38 Q0-46 -8-38Z" fill="#7d4a2f"/>
+    <path d="M12-26 L24-40" stroke="#d9a67c" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- another traveler -->
+  <g transform="translate(350 380)">
+    <ellipse cy="3" rx="15" ry="4" fill="#000" opacity=".18"/>
+    <path d="M0-30 C9-30 14-13 16 0 L-16 0 C-14-13 -9-30 0-30Z" fill="#77875c"/>
+    <circle cx="0" cy="-36" r="7" fill="#e2b58e"/>
+    <path d="M-7-38 Q0-48 7-38 L7-34 Q0-42 -7-34Z" fill="#566345"/>
+  </g>
+  <rect width="800" height="450" fill="url(#plateVignette)" pointer-events="none"/>
+</svg>

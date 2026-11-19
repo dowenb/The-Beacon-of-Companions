@@ -1,0 +1,21 @@
+[build]
+  command = "rm -rf dist && mkdir -p dist && cp -R index.html styles.css story.js game.js favicon.svg assets dist/"
+  publish = "dist"
+
+# Stage only the files the game needs at runtime. README.md, netlify.toml,
+# tools/ and any future tests/ stay out of the published site. Local play from
+# the repository root is unchanged.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

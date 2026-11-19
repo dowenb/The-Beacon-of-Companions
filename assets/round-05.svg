@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="A fox leads companions along a glowing forest trail while a dark straight path tempts the lone traveler">
+  <defs>
+    <radialGradient id="plateVignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="#0c1320" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0c1320" stop-opacity="0.28"/>
+    </radialGradient>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4b4b78"/><stop offset="1" stop-color="#26364c"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#bff2d0" stop-opacity=".9"/><stop offset="1" stop-color="#8fe0b8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <circle cx="140" cy="76" r="26" fill="#e8e4ff" opacity=".8"/>
+  <g fill="#1e3a3a">
+    <path d="M0 0 H70 L110 260 L40 260Z"/><path d="M730 0 H800 V270 L690 270Z"/>
+    <path d="M120 0 H166 L196 210 L140 210Z"/><path d="M650 0 H694 L672 210 L620 210Z"/>
+    <path d="M250 0 H286 L300 170 L262 170Z"/><path d="M520 0 H556 L544 170 L506 170Z"/>
+  </g>
+  <path d="M0 300 Q180 262 360 294 T800 280 V450 H0Z" fill="#28413c"/>
+  <!-- winding lit trail -->
+  <path d="M330 450 C330 390 430 372 430 330 C430 292 520 284 540 250 L590 244 C560 292 478 306 478 340 C478 382 388 396 390 450Z" fill="#d7c58c" opacity=".55"/>
+  <!-- dark straight trail -->
+  <path d="M120 450 L192 450 L150 250 L118 250Z" fill="#16242a" opacity=".9"/>
+  <!-- glowing mushrooms -->
+  <g>
+    <g transform="translate(360 400)"><circle r="18" fill="url(#glow)"/><path d="M-2 0 V-12" stroke="#dfe9d2" stroke-width="3"/><path d="M-11-12 Q0-26 11-12Z" fill="#b6edd0"/></g>
+    <g transform="translate(452 344)"><circle r="15" fill="url(#glow)"/><path d="M-2 0 V-10" stroke="#dfe9d2" stroke-width="3"/><path d="M-9-10 Q0-22 9-10Z" fill="#b6edd0"/></g>
+    <g transform="translate(520 290)"><circle r="14" fill="url(#glow)"/><path d="M-2 0 V-9" stroke="#dfe9d2" stroke-width="3"/><path d="M-8-9 Q0-20 8-9Z" fill="#b6edd0"/></g>
+    <g transform="translate(290 420)"><circle r="12" fill="url(#glow)"/><path d="M-2 0 V-8" stroke="#dfe9d2" stroke-width="2"/><path d="M-7-8 Q0-18 7-8Z" fill="#b6edd0"/></g>
+  </g>
+  <!-- companions on winding path -->
+  <g data-party="friends" transform="translate(420 372)"><ellipse cy="3" rx="16" ry="4" fill="#000" opacity=".25"/><path d="M0-32 C10-32 15-14 17 0 L-17 0 C-15-14 -10-32 0-32Z" fill="#3f6079"/><circle cx="0" cy="-38" r="7" fill="#d9a87e"/><path d="M-8-40 Q0-52 8-40 L8-36 Q0-44 -8-36Z" fill="#2d4659"/></g>
+  <g data-party="friends" transform="translate(470 356)"><ellipse cy="3" rx="15" ry="4" fill="#000" opacity=".25"/><path d="M0-30 C9-30 14-13 16 0 L-16 0 C-14-13 -9-30 0-30Z" fill="#8a6a49"/><circle cx="0" cy="-36" r="7" fill="#d9a87e"/></g>
+  <g data-party="friends" transform="translate(516 332)"><ellipse cy="3" rx="14" ry="4" fill="#000" opacity=".25"/><path d="M0-28 C8-28 12-12 14 0 L-14 0 C-12-12 -8-28 0-28Z" fill="#6f7f5a"/><circle cx="0" cy="-34" r="6.5" fill="#d9a87e"/></g>
+  <!-- Pip the fox scout ahead -->
+  <g data-party="pip" transform="translate(556 286)">
+    <ellipse cx="0" cy="14" rx="25" ry="4" fill="#000" opacity=".2"/>
+    <path d="M-12 6 V14 M-2 6 V14 M8 6 V14" stroke="#a85c31" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M10 2 Q26 -4 31 -20 Q35 -8 27 3 Q20 10 9 8Z" fill="#cf753f"/>
+    <path d="M31 -20 Q35 -8 27 3 Q32 -9 31 -20Z" fill="#f7e8d2"/>
+    <ellipse cx="-2" cy="2" rx="15" ry="8" fill="#d88049"/>
+    <path d="M-13 5 Q-2 12 10 5 Q-2 10 -13 5Z" fill="#f5dfc2"/>
+    <path d="M-18 -6 Q-11 -14 -2 -10 Q4 -5 2 2 Q-3 8 -12 6 Q-20 2 -18 -6Z" fill="#dc874f"/>
+    <path d="M-18 -2 Q-27 -1 -31 3 Q-25 8 -16 6Z" fill="#efad7b"/>
+    <circle cx="-31" cy="3" r="2" fill="#2b2018"/>
+    <path d="M-16 -10 L-19 -23 L-8 -12Z" fill="#b96435"/>
+    <path d="M-6 -12 L-2 -23 L5 -10Z" fill="#b96435"/>
+    <path d="M-16 -12 L-17 -19 L-11 -13Z" fill="#f2b79b"/>
+    <circle cx="-12" cy="-3" r="2.2" fill="#2b2018"/>
+    <circle cx="-12.6" cy="-3.6" r=".7" fill="#fff"/>
+  </g>
+  <!-- lone figure on dark path -->
+  <g transform="translate(146 352)" opacity=".9">
+    <path d="M0-30 C9-30 14-13 16 0 L-16 0 C-14-13 -9-30 0-30Z" fill="#39434f"/>
+    <circle cx="0" cy="-36" r="7" fill="#b9a48f"/>
+  </g>
+  <rect width="800" height="450" fill="url(#plateVignette)" pointer-events="none"/>
+</svg>

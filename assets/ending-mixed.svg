@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="A wayfinder on a hilltop with a few friends, part of the valley restored and part still dark">
+  <defs>
+    <radialGradient id="plateVignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="#0c1320" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0c1320" stop-opacity="0.28"/>
+    </radialGradient>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7a739c"/><stop offset=".55" stop-color="#c58f80"/><stop offset="1" stop-color="#5c6480"/></linearGradient>
+    <radialGradient id="beacon"><stop stop-color="#ffd98a" stop-opacity=".6"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <circle cx="660" cy="96" r="30" fill="#ffe6bb" opacity=".85"/>
+  <!-- restored half of valley (right) -->
+  <path d="M400 300 Q600 260 800 292 V450 H400Z" fill="#6c8c76"/>
+  <g>
+    <g fill="#e0d0ae" stroke="#94754f" stroke-width="2"><rect x="560" y="316" width="52" height="40"/><rect x="660" y="330" width="46" height="32"/></g>
+    <g fill="#b26a45"><path d="M552 316 L586 292 L620 316Z"/><path d="M652 330 L683 310 L714 330Z"/></g>
+    <g fill="#ffd98a"><rect x="576" y="330" width="13" height="13"/><rect x="674" y="340" width="12" height="12"/></g>
+  </g>
+  <!-- dark half of valley (left) -->
+  <path d="M0 290 Q200 258 400 300 V450 H0Z" fill="#39424f"/>
+  <g fill="#232b36" opacity=".9">
+    <path d="M50 344 l26-18 l26 18Z"/><path d="M140 370 l22-16 l22 16Z"/><path d="M250 346 l26-18 l26 18Z"/>
+  </g>
+  <path d="M148 330 L188 302" stroke="#6b6152" stroke-width="7" opacity=".7"/>
+  <path d="M162 322 L152 308 M176 312 L166 300" stroke="#6b6152" stroke-width="4" opacity=".7"/>
+  <!-- hilltop -->
+  <path d="M0 450 Q200 372 400 396 Q600 420 800 372 V450Z" fill="#4a5a56"/>
+  <!-- beacon -->
+  <g transform="translate(400 330)">
+    <circle r="100" fill="url(#beacon)"/>
+    <path d="M-26 30 H26 L20 60 H-20Z" fill="#7d786c"/>
+    <path d="M0 24 Q-16 -6 -4 -36 Q2 -16 10 -24 Q18 -2 6 24Z" fill="#f2a447"/>
+    <path d="M0 22 Q-10 0 0 -18 Q10 0 4 22Z" fill="#ffd36b"/>
+  </g>
+  <!-- wayfinder and two friends -->
+  <g>
+    <g transform="translate(330 398)"><ellipse cy="3" rx="17" ry="5" fill="#000" opacity=".25"/><path d="M0-34 C11-34 16-15 18 0 L-18 0 C-16-15 -11-34 0-34Z" fill="#3f6079"/><circle cx="0" cy="-40" r="7.5" fill="#d9a87e"/><path d="M-8-42 Q0-54 8-42 L8-38 Q0-46 -8-38Z" fill="#2d4659"/></g>
+    <g transform="translate(388 410)"><ellipse cy="3" rx="16" ry="4" fill="#000" opacity=".25"/><path d="M0-30 C9-30 14-13 16 0 L-16 0 C-14-13 -9-30 0-30Z" fill="#8a6a49"/><circle cx="0" cy="-36" r="7" fill="#d9a87e"/></g>
+    <g transform="translate(452 398)"><ellipse cy="3" rx="16" ry="4" fill="#000" opacity=".25"/><path d="M0-30 C9-30 14-13 16 0 L-16 0 C-14-13 -9-30 0-30Z" fill="#6a5c7c"/><circle cx="0" cy="-36" r="7" fill="#d9a87e"/></g>
+  </g>
+  <!-- empty space suggested by faded figures -->
+  <g opacity=".25" fill="#2b3440">
+    <path d="M520 398 C530 388 540 398 540 410 H510 C510 398 514 392 520 398Z"/>
+    <path d="M560 400 C570 390 580 400 580 412 H550 C550 400 554 394 560 400Z"/>
+  </g>
+  <rect width="800" height="450" fill="url(#plateVignette)" pointer-events="none"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="A lone wayfinder silhouetted against a cold beacon flame above a dark sleeping valley">
+  <defs>
+    <radialGradient id="plateVignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="#0c1320" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0c1320" stop-opacity="0.28"/>
+    </radialGradient>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#101a30"/><stop offset="1" stop-color="#33425e"/></linearGradient>
+    <radialGradient id="cold"><stop stop-color="#cfe0f5" stop-opacity=".5"/><stop offset="1" stop-color="#8fa7c9" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <circle cx="140" cy="80" r="26" fill="#dbe6f7" opacity=".8"/>
+  <g fill="#fff" opacity=".65">
+    <circle cx="260" cy="54" r="1.5"/><circle cx="350" cy="104" r="1.2"/><circle cx="480" cy="48" r="1.6"/>
+    <circle cx="580" cy="90" r="1.3"/><circle cx="700" cy="60" r="1.5"/><circle cx="760" cy="130" r="1.2"/>
+  </g>
+  <path d="M0 292 Q180 254 360 290 T800 274 V450 H0Z" fill="#2b364d"/>
+  <!-- unlit valley windows -->
+  <g fill="#141d2c" opacity=".95">
+    <path d="M40 342 l26-18 l26 18Z"/><path d="M120 366 l22-16 l22 16Z"/><path d="M230 340 l28-20 l28 20Z"/>
+    <path d="M340 370 l24-16 l24 16Z"/><path d="M450 344 l26-18 l26 18Z"/><path d="M560 368 l24-16 l24 16Z"/>
+    <path d="M660 340 l28-20 l28 20Z"/><path d="M750 366 l22-16 l22 16Z"/>
+  </g>
+  <!-- tower -->
+  <path d="M348 450 V200 Q348 182 366 182 H434 Q452 182 452 200 V450Z" fill="#3c4557" stroke="#252d3d" stroke-width="3"/>
+  <g stroke="#2b3444" stroke-width="2" opacity=".6"><path d="M348 260 H452 M348 330 H452 M348 400 H452"/></g>
+  <!-- cold beacon flame -->
+  <circle cx="400" cy="178" r="104" fill="url(#cold)"/>
+  <path d="M400 196 Q378 154 394 112 Q404 138 412 120 Q424 150 408 196Z" fill="#9fc0e0" opacity=".9"/>
+  <path d="M400 194 Q390 160 400 136 Q412 162 406 194Z" fill="#dceaf7" opacity=".9"/>
+  <path d="M370 200 H430 L422 216 H378Z" fill="#2b3444"/>
+  <path d="M382 214 L356 250 M418 214 L444 250" stroke="#9fc0e0" stroke-width="2" opacity=".25"/>
+  <!-- solitary silhouette -->
+  <g transform="translate(400 330)" fill="#0c1424">
+    <ellipse cy="3" rx="20" ry="5" opacity=".4"/>
+    <path d="M0-34 C12-34 17-15 20 0 L-20 0 C-17-15 -12-34 0-34Z"/>
+    <circle cx="0" cy="-40" r="8"/>
+  </g>
+  <!-- cold wind -->
+  <g stroke="#8fa7c9" stroke-width="2" opacity=".25" fill="none">
+    <path d="M60 200 Q120 190 180 200 T300 200"/>
+    <path d="M520 240 Q580 230 640 240 T760 240"/>
+    <path d="M100 400 Q160 390 220 400"/>
+  </g>
+  <rect width="800" height="450" fill="url(#plateVignette)" pointer-events="none"/>
+</svg>

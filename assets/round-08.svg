@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Companions shelter together around a lantern in a storm, while an exposed stair climbs into the rain">
+  <defs>
+    <radialGradient id="plateVignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="#0c1320" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0c1320" stop-opacity="0.28"/>
+    </radialGradient>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3c4a63"/><stop offset="1" stop-color="#202c40"/></linearGradient>
+    <radialGradient id="lantern"><stop stop-color="#ffe3a0" stop-opacity=".85"/><stop offset="1" stop-color="#ffc46b" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <!-- clouds -->
+  <g fill="#2b3950" opacity=".9">
+    <path d="M0 60 Q100 26 200 62 Q300 26 400 60 Q520 22 640 64 Q720 40 800 66 V140 H0Z"/>
+    <path d="M0 118 Q120 86 240 122 Q360 84 480 120 Q620 84 800 126 V190 H0Z" opacity=".7"/>
+  </g>
+  <!-- rain -->
+  <g stroke="#a9bdd0" stroke-width="2" opacity=".45">
+    <path d="M40 40 L24 96 M110 70 L94 126 M180 30 L164 86 M250 80 L234 136 M320 40 L304 96 M390 70 L374 126 M460 30 L444 86 M530 80 L514 136 M600 40 L584 96 M670 70 L654 126 M740 30 L724 86"/>
+  </g>
+  <path d="M0 320 Q160 280 320 310 T800 290 V450 H0Z" fill="#2b3a44"/>
+  <!-- exposed stair on the right -->
+  <g fill="#4a5560" stroke="#333d47" stroke-width="2">
+    <path d="M600 300 H800 V320 H600Z"/><path d="M620 262 H800 V280 H620Z"/>
+    <path d="M642 224 H800 V242 H642Z"/><path d="M664 186 H800 V204 H664Z"/>
+    <path d="M690 148 H800 V166 H690Z"/>
+  </g>
+  <!-- shelter nook on the left -->
+  <path d="M0 236 Q120 210 220 250 Q280 274 300 330 Q220 316 120 330 L0 342Z" fill="#3a4a52"/>
+  <ellipse cx="200" cy="350" rx="170" ry="110" fill="url(#lantern)"/>
+  <!-- circle of cloaks -->
+  <g>
+    <g data-party="friends" transform="translate(120 370)"><ellipse cy="3" rx="18" ry="5" fill="#000" opacity=".3"/><path d="M0-36 C12-36 17-16 20 0 L-20 0 C-17-16 -12-36 0-36Z" fill="#4d6f86"/><circle cx="0" cy="-42" r="7.5" fill="#d9a87e"/><path d="M14-26 L30-38" stroke="#d9a87e" stroke-width="5" stroke-linecap="round"/></g>
+    <g data-party="friends" transform="translate(190 398)"><ellipse cy="3" rx="18" ry="5" fill="#000" opacity=".3"/><path d="M0-36 C12-36 17-16 20 0 L-20 0 C-17-16 -12-36 0-36Z" fill="#8a6a49"/><circle cx="0" cy="-42" r="7.5" fill="#d9a87e"/></g>
+    <g data-party="friends" transform="translate(268 370)"><ellipse cy="3" rx="18" ry="5" fill="#000" opacity=".3"/><path d="M0-36 C12-36 17-16 20 0 L-20 0 C-17-16 -12-36 0-36Z" fill="#5e7086"/><circle cx="0" cy="-42" r="7.5" fill="#d9a87e"/><path d="M-14-26 L-30-38" stroke="#d9a87e" stroke-width="5" stroke-linecap="round"/></g>
+    <g data-party="gorin" transform="translate(196 330)"><ellipse cy="3" rx="16" ry="4" fill="#000" opacity=".25"/><path d="M0-32 C10-32 15-14 17 0 L-17 0 C-15-14 -10-32 0-32Z" fill="#77724f"/><circle cx="0" cy="-38" r="7" fill="#d9a87e"/></g>
+  </g>
+  <!-- lantern -->
+  <g transform="translate(196 366)">
+    <circle r="34" fill="#ffd77a" opacity=".28"/>
+    <rect x="-9" y="-14" width="18" height="24" rx="3" fill="#f5c96e" stroke="#8a6a3a" stroke-width="2"/>
+    <path d="M-9 -14 H9 M0 -20 V-14" stroke="#8a6a3a" stroke-width="3"/>
+    <rect x="-5" y="-9" width="10" height="14" rx="2" fill="#fff0bd"/>
+  </g>
+  <!-- shared cloak over the group -->
+  <path d="M96 344 Q196 306 296 344 Q196 330 96 344Z" fill="#6b7a63" opacity=".85"/>
+  <!-- lone climber on the stair -->
+  <g transform="translate(724 214)">
+    <path d="M0-28 C8-28 12-12 14 0 L-14 0 C-12-12 -8-28 0-28Z" fill="#39434f"/>
+    <circle cx="0" cy="-34" r="6.5" fill="#b9a48f"/>
+    <path d="M-12-18 L-24-8" stroke="#b9a48f" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <rect width="800" height="450" fill="url(#plateVignette)" pointer-events="none"/>
+</svg>

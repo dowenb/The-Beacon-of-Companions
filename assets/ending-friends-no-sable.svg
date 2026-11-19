@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="A joyful circle of friends celebrates around a blazing beacon as the valley rebuilds at sunrise">
+  <defs>
+    <radialGradient id="plateVignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="#0c1320" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0c1320" stop-opacity="0.28"/>
+    </radialGradient>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffd9a0"/><stop offset=".5" stop-color="#f6b478"/><stop offset="1" stop-color="#a8c6b4"/></linearGradient>
+    <radialGradient id="flame"><stop stop-color="#fff3c4" stop-opacity=".95"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <circle cx="112" cy="92" r="44" fill="#fff2c8" opacity=".95"/>
+  <path d="M0 244 Q140 204 280 238 T560 222 T800 242 V450 H0Z" fill="#8fb39a" opacity=".8"/>
+  <path d="M0 290 Q200 258 400 288 T800 276 V450 H0Z" fill="#6a9579"/>
+  <!-- rebuilt valley -->
+  <g>
+    <g fill="#e8d8b4" stroke="#9b7951" stroke-width="2">
+      <rect x="40" y="300" width="60" height="46"/><rect x="124" y="318" width="48" height="34"/>
+      <rect x="620" y="310" width="58" height="42"/><rect x="700" y="326" width="46" height="30"/>
+    </g>
+    <g fill="#b36b45"><path d="M32 300 L70 276 L108 300Z"/><path d="M116 318 L148 298 L180 318Z"/><path d="M612 310 L649 288 L686 310Z"/><path d="M692 326 L723 308 L754 326Z"/></g>
+    <g fill="#ffd98a"><rect x="56" y="318" width="14" height="14"/><rect x="636" y="326" width="14" height="14"/><rect x="712" y="334" width="12" height="12"/></g>
+    <path d="M196 344 Q240 330 280 344 M520 342 Q564 328 604 342" stroke="#7aa46f" stroke-width="8" fill="none" opacity=".8"/>
+  </g>
+  <!-- beacon tower -->
+  <path d="M344 450 V196 Q344 176 364 176 H436 Q456 176 456 196 V450Z" fill="#8b877a" stroke="#5e5a50" stroke-width="3"/>
+  <g stroke="#6b675e" stroke-width="2" opacity=".6"><path d="M344 250 H456 M344 320 H456 M344 390 H456"/></g>
+  <!-- blazing beacon -->
+  <circle cx="400" cy="170" r="120" fill="url(#flame)"/>
+  <path d="M400 190 Q354 130 384 66 Q392 100 408 96 Q428 46 420 12 Q472 86 430 190Z" fill="#f59a3e"/>
+  <path d="M400 188 Q374 140 396 96 Q412 132 422 104 Q442 148 416 188Z" fill="#ffd36b"/>
+  <path d="M400 186 Q388 150 402 122 Q416 150 410 186Z" fill="#fff3c4"/>
+  <path d="M366 196 H434 L426 214 H374Z" fill="#5e5a50"/>
+  <!-- celebrating friends -->
+  <g>
+    <g transform="translate(240 392)"><ellipse cy="3" rx="18" ry="5" fill="#000" opacity=".2"/><path d="M0-36 C12-36 17-16 20 0 L-20 0 C-17-16 -12-36 0-36Z" fill="#4d6f86"/><circle cx="0" cy="-42" r="8" fill="#e0b189"/><path d="M14-26 L32-44" stroke="#e0b189" stroke-width="5" stroke-linecap="round"/></g>
+    <g transform="translate(292 414)"><ellipse cy="3" rx="17" ry="5" fill="#000" opacity=".2"/><path d="M0-32 C10-32 15-14 17 0 L-17 0 C-15-14 -10-32 0-32Z" fill="#8a6a49"/><circle cx="0" cy="-38" r="7" fill="#e0b189"/></g>
+    <g transform="translate(510 414)"><ellipse cy="3" rx="17" ry="5" fill="#000" opacity=".2"/><path d="M0-32 C10-32 15-14 17 0 L-17 0 C-15-14 -10-32 0-32Z" fill="#77875c"/><circle cx="0" cy="-38" r="7" fill="#e0b189"/></g>
+    <g transform="translate(562 392)"><ellipse cy="3" rx="18" ry="5" fill="#000" opacity=".2"/><path d="M0-36 C12-36 17-16 20 0 L-20 0 C-17-16 -12-36 0-36Z" fill="#6a5c7c"/><circle cx="0" cy="-42" r="8" fill="#e0b189"/><path d="M-14-26 L-32-44" stroke="#e0b189" stroke-width="5" stroke-linecap="round"/></g>
+    <g transform="translate(400 428)"><path d="M0-30 C9-30 14-13 16 0 L-16 0 C-14-13 -9-30 0-30Z" fill="#3f6079"/><circle cx="0" cy="-36" r="7" fill="#e0b189"/></g>
+  </g>
+  <!-- Pip with ribbon -->
+  <g data-party="pip" transform="translate(326 406)">
+    <ellipse cx="0" cy="14" rx="25" ry="4" fill="#000" opacity=".2"/>
+    <path d="M-12 6 V14 M-2 6 V14 M8 6 V14" stroke="#a85c31" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M10 2 Q26 -4 31 -20 Q35 -8 27 3 Q20 10 9 8Z" fill="#cf753f"/>
+    <path d="M31 -20 Q35 -8 27 3 Q32 -9 31 -20Z" fill="#f7e8d2"/>
+    <ellipse cx="-2" cy="2" rx="15" ry="8" fill="#d88049"/>
+    <path d="M-13 5 Q-2 12 10 5 Q-2 10 -13 5Z" fill="#f5dfc2"/>
+    <path d="M-18 -6 Q-11 -14 -2 -10 Q4 -5 2 2 Q-3 8 -12 6 Q-20 2 -18 -6Z" fill="#dc874f"/>
+    <path d="M-18 -2 Q-27 -1 -31 3 Q-25 8 -16 6Z" fill="#efad7b"/>
+    <circle cx="-31" cy="3" r="2" fill="#2b2018"/>
+    <path d="M-16 -10 L-19 -23 L-8 -12Z" fill="#b96435"/>
+    <path d="M-6 -12 L-2 -23 L5 -10Z" fill="#b96435"/>
+    <path d="M-16 -12 L-17 -19 L-11 -13Z" fill="#f2b79b"/>
+    <circle cx="-12" cy="-3" r="2.2" fill="#2b2018"/>
+    <circle cx="-12.6" cy="-3.6" r=".7" fill="#fff"/>
+    <path d="M9 -2 L24 6 L15 11Z" fill="#d65b74"/>
+  </g>
+  <!-- confetti -->
+  <g fill="#d65b74" opacity=".8"><circle cx="180" cy="120" r="3"/><circle cx="660" cy="180" r="3"/><circle cx="520" cy="80" r="3"/></g>
+  <g fill="#ffd36b" opacity=".9"><circle cx="240" cy="150" r="3"/><circle cx="590" cy="130" r="3"/><circle cx="300" cy="90" r="3"/></g>
+  <rect width="800" height="450" fill="url(#plateVignette)" pointer-events="none"/>
+</svg>

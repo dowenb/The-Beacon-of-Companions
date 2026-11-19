@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fantasy adventure about the people you choose to walk with." />
+    <title>The Beacon of Companions</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Beacon of Companions" />
+    <meta property="og:description" content="Ten rounds, two choices each, and three endings. Who will you walk with?" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stars" aria-hidden="true"></div>
+
+    <main id="app">
+      <!-- TITLE ------------------------------------------------------- -->
+      <section id="title-screen" class="screen screen--title hidden">
+        <div class="title-card">
+          <p class="eyebrow">A ten-round adventure</p>
+          <h1>The Beacon<br /><em>of Companions</em></h1>
+          <p class="title-lede">
+            The long night is coming. You are the last wayfinder of Lowfall,
+            and the beacon tower has gone dark. The road ahead is full of
+            small decisions — and every one of them asks the same question:
+            <strong>who will you walk with?</strong>
+          </p>
+          <div class="title-rule"><span aria-hidden="true">✦</span></div>
+          <p class="title-note">
+            Ten rounds. Two choices each. Friends make the road easier;
+            walking alone makes it harder. There are three possible endings.
+          </p>
+          <button id="start-button" class="button button--primary button--large">
+            Begin the journey <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ROUND ------------------------------------------------------- -->
+      <section id="round-screen" class="screen screen--round hidden">
+        <header class="hud">
+          <div class="hud__top">
+            <p id="round-counter" class="eyebrow">Round 1 of 10</p>
+            <div class="bond-meter">
+              <span class="bond-meter__label">Bonds</span>
+              <span id="bond-count" class="bond-meter__count">0 / 10</span>
+              <span id="bond-pips" class="pips" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Story progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+            <span id="progress-fill" class="progress__fill"></span>
+          </div>
+          <div class="party-row">
+            <span class="party-row__label">Party</span>
+            <div id="party-list" class="party-list"><span class="party-empty">Traveling alone</span></div>
+          </div>
+        </header>
+
+        <div class="round-layout">
+          <figure class="art">
+            <img id="round-image" src="" alt="" />
+            <figcaption>Illustration of the current challenge</figcaption>
+          </figure>
+
+          <article class="story">
+            <div id="difficulty-badge" class="difficulty"></div>
+            <h2 id="round-title"></h2>
+            <div id="story-text" class="story-text"></div>
+            <p class="prompt">What do you do?</p>
+
+            <div class="choices">
+              <button id="choice-collab" class="choice choice--collab">
+                <span class="choice__icon" aria-hidden="true">✦</span>
+                <span class="choice__body">
+                  <span id="choice-collab-label" class="choice__label"></span>
+                  <span id="choice-collab-tag" class="choice__tag"></span>
+                </span>
+                <span class="choice__arrow" aria-hidden="true">→</span>
+              </button>
+
+              <button id="choice-solo" class="choice choice--solo">
+                <span class="choice__icon" aria-hidden="true">◇</span>
+                <span class="choice__body">
+                  <span id="choice-solo-label" class="choice__label"></span>
+                  <span id="choice-solo-tag" class="choice__tag"></span>
+                </span>
+                <span class="choice__arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- RESULT ------------------------------------------------------ -->
+      <section id="result-screen" class="screen screen--result hidden">
+        <div class="result-card">
+          <p id="result-kicker" class="eyebrow"></p>
+          <h2>You chose</h2>
+          <p id="result-choice" class="result-choice"></p>
+          <div class="title-rule"><span aria-hidden="true">✦</span></div>
+          <p id="result-text" class="result-text"></p>
+          <div id="result-join" class="join hidden"></div>
+          <button id="result-continue" class="button button--primary button--large">Continue →</button>
+        </div>
+      </section>
+
+      <!-- ENDING ------------------------------------------------------ -->
+      <section id="ending-screen" class="screen screen--ending hidden">
+        <figure class="ending-art">
+          <img id="ending-image" src="" alt="" />
+        </figure>
+        <div class="ending-card">
+          <p class="eyebrow">Your ending</p>
+          <h2 id="ending-title"></h2>
+          <p id="ending-epigraph" class="ending-epigraph"></p>
+          <div class="title-rule"><span aria-hidden="true">✦</span></div>
+          <p id="ending-text" class="ending-text"></p>
+          <p id="ending-score" class="ending-score"></p>
+          <button id="replay-button" class="button button--primary button--large">
+            Play again <span aria-hidden="true">↺</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="story.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
